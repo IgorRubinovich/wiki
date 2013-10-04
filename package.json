@@ -1,0 +1,28 @@
+{
+  "name": "wiki",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "3.3.1",
+    "forever": "0.10.8",
+    "mustache": "0.7.2",
+    "optimist": "0.6.0",
+    "redis": "0.8.4",
+    "share": "0.6.2",
+    "mysql": "2.0.0-alpha9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IgorRubinovich/wiki.git"
+  },
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/IgorRubinovich/wiki/issues"
+  }
+}
