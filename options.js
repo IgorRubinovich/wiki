@@ -60,7 +60,9 @@ module.exports = {
             return;
         }
 
-        client.name = wp_cookie_parts[0];
+        if (action.meta) {
+            action.meta.author = wp_cookie_parts[0];
+        }
 
         action.accept();
     }
