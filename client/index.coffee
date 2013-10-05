@@ -41,7 +41,8 @@ The text on the left is being rendered with markdown, so you can do all the usua
 
 render = (content, name, docName, res) ->
 	markdown = showdown.makeHtml content
-	html = Mustache.to_html template, {content, markdown, name, docName}
+	contentRoot = '/wiki'
+	html = Mustache.to_html template, {content, markdown, name, docName, contentRoot}
 	res.writeHead 200, {'content-type': 'text/html'}
 	res.end html
 
