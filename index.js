@@ -16,7 +16,7 @@ server.listen(3000, function(){
     console.log('Server running at port 3000');
 });
 
-var wiki = require('./client');
+var wiki = require('./wiki');
 
 server.get('/?', function(req, res, next) {
   res.writeHead(301, {location: '/Main'});

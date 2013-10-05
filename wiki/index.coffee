@@ -43,7 +43,7 @@ render = (content, name, docName, res) ->
 	markdown = showdown.makeHtml content
 	contentRoot = '/wiki'
 	html = Mustache.to_html template, {content, markdown, name, docName, contentRoot}
-	res.writeHead 200, {'content-type': 'text/html'}
+	res.writeHead 200, {'content-type': 'text/html; charset=utf-8'}
 	res.end html
 
 module.exports = (docName, model, res) ->
