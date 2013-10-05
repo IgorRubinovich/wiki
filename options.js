@@ -1,3 +1,5 @@
+var cookie = require('cookie');
+
 // ShareJS options
 module.exports = {
     // Port to listen on
@@ -33,7 +35,33 @@ module.exports = {
 
     // Authentication code to test if clients are allowed to perform different actions.
     // See documentation for details.
-    //auth: function(client, action) {
-    //	action.allow();
-    //}
+    auth: function(client, action) {
+        var header = client.headers["cookie"];
+        if (!header) {
+            action.reject();
+            return;
+        }
+
+        var cookies = cookie.parse(header);
+        if (!cookies) {
+            action.reject();
+            return;
+        }
+
+        var wp_cookie = cookies['wordpress_ae900921635efaeb4fb81dcc09a4fdf4'];
+        if (!wp_cookie) {
+            action.reject();
+            return;
+        }
+
+        var wp_cookie_parts = wp_cookie.split('|');
+        if (!wp_cookie_parts[0]) {
+            action.reject();
+            return;
+        }
+
+        client.name = wp_cookie_parts[0];
+
+        action.accept();
+    }
 }

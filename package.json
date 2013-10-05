@@ -12,7 +12,8 @@
     "share": "0.6.2",
     "mysql": "2.0.0-alpha9",
     "coffee-script": "~1.6.3",
-    "connect": "~2.9.0"
+    "connect": "~2.9.0",
+    "cookie": "~0.1.0"
   },
   "devDependencies": {},
   "scripts": {

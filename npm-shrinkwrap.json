@@ -71,7 +71,7 @@
           "dependencies": {
             "mime": {
               "version": "1.2.11",
-              "from": "mime@~1.2.9"
+              "from": "mime@1.2.11"
             }
           }
         },
@@ -81,7 +81,7 @@
         },
         "debug": {
           "version": "0.7.2",
-          "from": "debug@*"
+          "from": "debug@0.7.2"
         }
       }
     },
@@ -607,7 +607,7 @@
           "dependencies": {
             "commander": {
               "version": "0.6.1",
-              "from": "commander@0.6.1",
+              "from": "https://registry.npmjs.org/commander/-/commander-0.6.1.tgz",
               "resolved": "https://registry.npmjs.org/commander/-/commander-0.6.1.tgz"
             },
             "tinycolor": {
@@ -798,10 +798,6 @@
             }
           }
         },
-        "coffee-script": {
-          "version": "1.6.3",
-          "from": "coffee-script@1.6.3"
-        },
         "hat": {
           "version": "0.0.3",
           "from": "hat@0.0.3"
@@ -827,11 +823,11 @@
     },
     "coffee-script": {
       "version": "1.6.3",
-      "from": "coffee-script@"
+      "from": "coffee-script@1.6.3"
     },
     "connect": {
       "version": "2.9.0",
-      "from": "connect@",
+      "from": "connect@2.9.0",
       "dependencies": {
         "qs": {
           "version": "0.6.5",
@@ -855,7 +851,7 @@
           "dependencies": {
             "mime": {
               "version": "1.2.11",
-              "from": "mime@~1.2.9"
+              "from": "mime@1.2.11"
             },
             "range-parser": {
               "version": "0.0.4",
@@ -881,7 +877,7 @@
         },
         "debug": {
           "version": "0.7.2",
-          "from": "debug@*"
+          "from": "debug@0.7.2"
         },
         "methods": {
           "version": "0.0.1",
@@ -893,15 +889,21 @@
           "dependencies": {
             "readable-stream": {
               "version": "1.0.17",
-              "from": "readable-stream@~1.0.2"
+              "from": "readable-stream@1.0.17",
+              "resolved": "https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.17.tgz"
             },
             "stream-counter": {
               "version": "0.1.0",
-              "from": "stream-counter@~0.1.0"
+              "from": "stream-counter@0.1.0",
+              "resolved": "https://registry.npmjs.org/stream-counter/-/stream-counter-0.1.0.tgz"
             }
           }
         }
       }
+    },
+    "cookie": {
+      "version": "0.1.0",
+      "from": "cookie@"
     }
   }
 }
