@@ -7,7 +7,8 @@
   <body>
     <div id="header">
       <div id="htext">
-        Wiki <strong>{{name}}</strong>
+        Страница <strong>{{name}}</strong>
+        <div id="login">{{{login}}}</div>
       </div>
     </div>
     <div id="left">

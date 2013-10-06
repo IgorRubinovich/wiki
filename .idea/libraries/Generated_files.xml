@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/out/production/wiki/index.js" />
+        <item url="file://$PROJECT_DIR$/wiki/index.js" />
+        <item url="file://$PROJECT_DIR$/out/production/wiki/auth.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/auth.js" />
+      <root url="file://$PROJECT_DIR$/out/production/wiki/index.js" />
+      <root url="file://$PROJECT_DIR$/out/production/wiki/auth.js" />
+      <root url="file://$PROJECT_DIR$/auth.js" />
+      <root url="file://$PROJECT_DIR$/out/production/wiki/index.js" />
+      <root url="file://$PROJECT_DIR$/wiki/index.js" />
+      <root url="file://$PROJECT_DIR$/out/production/wiki/auth.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

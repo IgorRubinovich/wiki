@@ -26,5 +26,5 @@ server.get('/?', function(req, res, next) {
 server.get('/:docName', function(req, res, next) {
   var docName;
   docName = req.params.docName;
-  wiki(docName, server.model, res, next);
+  wiki(docName, server.model, req, res, next);
 });
