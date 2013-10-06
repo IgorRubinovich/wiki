@@ -43,12 +43,13 @@ defaultContent = (name) ->
 
 render = (content, name, docName, req, res) ->
   markdown = showdown.makeHtml content
-  contentRoot = ''
+  site = 'http://cmpip.org'
+  contentRoot = '/wiki'
   user = auth(req.headers)
   if user
     login = "Пользователь: #{user}"
   else
-    self = encodeURIComponent(req.protocol + "://" + req.headers.host + req.path)
+    self = encodeURIComponent(site + contentRoot + req.path)
     login = "<a href='/wordpress/wp-login.php?redirect_to=#{self}'>Вход на сайт</a>"
 
   html = Mustache.to_html template, {content, markdown, name, docName, contentRoot, login}
